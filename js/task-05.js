@@ -6,11 +6,11 @@ const refs = {
 refs.inputEl.addEventListener('input', changeOutputValue)
 
 function changeOutputValue(event) {
-  refs.outputEl.textContent = event.currentTarget.value
-
   if (event.currentTarget.value === '') {
     return (refs.outputEl.textContent = 'Anonymous')
   }
+
+  refs.outputEl.textContent = event.currentTarget.value
 }
 
 // @ ---------------------------------------------------------------------------------------------------------
